@@ -28,6 +28,8 @@ To enable this plugin to work on your own local environment, you have to add a b
 
 After loading your features script in the root and unpacking and loading the plugin, you can go to the live view of a mint on main/rinkeby or to your localhost. Press the plugin from the menubar and a pop-up should appear showing your tokenId, hash and traits.
 
+If you open the `features.js` script from the folder in your IDE, you can make edits and then save the fil. Just re-open the plugin and the changes should be visible. No need to unpack the plugin again or run anything to refresh.
+
 ## ToDo
 
 Currently, the plugin feels quite hacky (but it works!). There's some stuff I'd still like to do if this plugin proves to be useful:
