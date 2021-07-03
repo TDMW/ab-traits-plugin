@@ -12,16 +12,16 @@ Go to `chrome://extensions` and make sure 'developer mode' is enabled. Press `lo
 
 To enable this plugin to work on your own local environment, you have to add a bit of code that injects the tokendata in the head of your page. Do this after the function where you generate the tokenData. For example, in the [Art Blocks Starter Template](https://github.com/Asupkay/artblocks-starter-template), add the code seen below to `views/layouts/index.hbs` after line 27 where tokenData gets defined.
 
-```
-	let injectTokenData = () => {
-		let head = document.getElementsByTagName("head")[0];
-		const script = document.createElement('script');
-		const td = `let td = { "hash": "${tokenData.hash}", "tokenId": "${tokenData.tokenId}" }`;
-		script.textContent = td;
-		head.appendChild(script, head.firstChild);
-	}
+```javascript
+let injectTokenData = () => {
+  let head = document.getElementsByTagName("head")[0];
+  const script = document.createElement('script');
+  const td = `let td = { "hash": "${tokenData.hash}", "tokenId": "${tokenData.tokenId}" }`;
+  script.textContent = td;
+  head.appendChild(script, head.firstChild);
+}
 
-	injectTokenData();
+injectTokenData();
 ```
 
 ## Usage
