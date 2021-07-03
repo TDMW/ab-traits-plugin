@@ -4,16 +4,6 @@
 	"version": "0.0.1",
 	"description": "A plugin to check the traits of your Art Blocks mints",
 	"short_name": "AB Traits Viewer",
-	"background": {
-		"scripts": ["background.js"]
-	},
-	"content_scripts": [
-		{
-			"matches": ["<all_urls>"],
-			"js": ["content-script.js"]
-		}
-	],
-	"web_accessible_resources": ["inject-script.js"],
 	"browser_action": {
 		"default_popup": "popup.html",
 		"default_title": "AB Traits"

@@ -35,12 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			featureBox.innerHTML += `<p>${feature}</p>`
 		})}, 1000);
 	}
-
-	// script.addEventListener("load", (e) => {
-	// 	setFeatures();
-	// });
-
-
 	script.onerror = () => {
 		messageBox.innerHTML = `No traits script detected. Make sure there's a 'features.js' file in the root of the plugin folder`;
 	}
